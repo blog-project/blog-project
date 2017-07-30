@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 1500px;
+    background: red;
+}
+
+
+/*Navigation styling*/
+
+.navbar {
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none; }
+
+.navbar-collapse {
+  margin-top: 20px; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #08A7A0; }
+.navbar-default .navbar-toggle:hover {
+  background: #f3d350; }
+
+.navbar-default .my-links li a {
+  color: #08A7A0; }
+
+.navbar-default .my-links li:after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0;
+  margin: 0 .5rem -5px 0;
+  -webkit-transition: width .3s ease-out, background-color .3s ease-out;
+  transition: width .3s ease-out, background-color .3s ease-out; }
+
+.navbar-default .my-links li a:hover {
+  color: #f3d350; }
+
+.navbar-default .my-links li:hover:after {
+  width: 100%;
+  background: #f3d350; }
+
+@media screen and (max-width: 768px) {
+  .navbar-default .my-links li:after {
+    display: none; } }
+
+#myUl {
+    display: flex;
+}
+
+
+
+/*
+#header .nav-elements .branding {
+    max-width: 180px;
+    margin: 0 auto
+}
+
+#header .nav-elements .navbar {
+    margin: 0;
+    padding: 0;
+    line-height: 120%;
+    list-style-type: none;
+    margin-top: 2rem;
+    width: 100%
+}
+
+#header .nav-elements .navbar a {
+    font-weight: 600;
+    color: #header;
+    text-decoration: none;
+    padding: 0 1rem;
+    -webkit-transition: 1s ease-out;
+    transition: 1s ease-out
+}
+
+#header .nav-elements .navbar a:after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0;
+    margin: 0 .5rem;
+    -webkit-transition: width .3s ease-out, background-color .3s ease-out;
+    transition: width .3s ease-out, background-color .3s ease-out
+}
+
+#header .nav-elements .navbar a:hover {
+    color: #header350
+}
+
+#header .nav-elements .navbar a:hover:after {
+    width: 100%;
+    background: #header350;
+}
+
+
+@media screen and (min-width:600px) {
+    #header .nav-elements {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+@media screen and (min-width:600px) {
+    #header .nav-elements .branding {
+        width: 30%;
+        margin: 0
+    }
+}
+
+@media screen and (min-width:600px) {
+    #header .nav-elements .navbar {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+}
+*/
