@@ -1,40 +1,21 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *, *:before, *:after {
-  box-sizing: inherit;
-}
-
+  box-sizing: inherit; }
 
 body {
-    height: 1500px;
-}
-
-//variable
-$pageBgColor: #999;
-$navFont: monospace, Montserrat, sans-serif;
-
-
-
-
-
-
-
-
+  height: 1500px; }
 
 body {
-    font-family: $navFont;
-}
-
+  font-family: monospace, Montserrat, sans-serif; }
 
 .navbar-default .collapse {
-    margin: 0 auto;
-} 
+  margin: 0 auto; }
+
 .navbar-default #myUl {
-   padding: 0 100px;
-}
+  padding: 0 100px; }
 
 .navbar {
   background: transparent;
@@ -47,6 +28,7 @@ body {
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #08A7A0; }
+
 .navbar-default .navbar-toggle:hover {
   background: #f3d350; }
 
@@ -72,7 +54,7 @@ body {
 @media screen and (max-width: 768px) {
   .navbar-default .my-links li:after {
     display: none; } }
-
 #myUl {
-    display: flex;
-}
+  display: flex; }
+
+/*# sourceMappingURL=home.css.map */
