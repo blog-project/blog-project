@@ -5,11 +5,16 @@
 
 body {
     height: 1500px;
-    background: red;
 }
 
 
 /*Navigation styling*/
+.navbar-default .collapse {
+    margin: 0 auto;
+} 
+.navbar-default #myUl {
+   padding: 0 100px;
+}
 
 .navbar {
   background: transparent;
@@ -51,7 +56,6 @@ body {
 #myUl {
     display: flex;
 }
-
 
 
 /*
