@@ -44,9 +44,11 @@ main {
     width: 100%;
     display: flex;
     justify-content: center; } }
+
 @media screen and (max-width: 768px) {
   .navbar-default .my-links li:after {
     display: none; } }
+
 #myUl {
   display: flex; }
 
@@ -76,5 +78,3 @@ aside.social-media ul li a {
 @media screen and (max-width: 768px) {
   section {
     margin-bottom: 130px; } }
-
-/*# sourceMappingURL=home.css.map */
