@@ -33,31 +33,29 @@
     <!--    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">-->
 
     <!-- My Styling-->
-    <link rel="stylesheet" href="./scss/home.css">
+    <link rel="stylesheet" href="./scss/styles.css">
 
 </head>
 
 <body>
-
-
-
+<!-- Page header -->
     <header>
         <div class="logo-wrapper">
             <a class="navbar-brand" href="#/">Ayo's Logo</a>
         </div>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default" id="myNavbar">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav" id="myUl">
-                        <li id="list"><a class="anchor" href="#/about">About </a></li>
-                        <li><a class="anchor" href="/blog">Blog</a></li>
+                    <ul class="nav navbar-nav my-links" id="myUl">
+                        <li><a class="anchor" href="#/about">About </a></li>
+                        <li><a class="anchor" href="#/blog">Blog</a></li>
                         <li><a class="anchor" href="#/shop">Shop</a></li>
                         <li><a class="anchor" href="#/joinmytribe">Join My Tribe</a></li>
                         <li><a class="anchor" href="#/contact">Contact</a></li>
@@ -70,8 +68,9 @@
             </div>
         </nav>
     </header>
+<!-- header ends -->
 
-
+<!-- social media sidebar -->
     <aside class="social-media">
         <ul>
             <li><a href="https://www.linkedin.com/in/terryntow/" target="_blank"><i class="fa fa-linkedin-square navbar-media-icons" aria-hidden="true"></i></a></li>
@@ -80,11 +79,23 @@
         </ul>
     </aside>
 
+  <!-- social media sidebar ends -->
 
+<!-- footer -->
+<div id="copyright-footer" class="content-bg">
+
+  <p id="user-copyright">
+    © 2017 jillayo | <a href="mailto:hello@jillayo.com">@hello{at}jillayo{dot}com</a>  | DESIGN BY <a href="www.terryntow.com" target="_blank">Terry Ntow</a><span class="pipe">&</span><a href="#">Ayanda</a>
+  </p>
+
+</div>
 
 
 
     <ng-view></ng-view>
+
+
+
     <!--Angular CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
     <!-- Angular route cdn-->
@@ -93,8 +104,8 @@
 
 
     <!--script-->
-    <script src="scripts/page.js"></script>
-    <script src="app.js"></script>
+    <script src="js/page.js"></script>
+    <script src="index.js"></script>
 
 
     <!-- main js-->
@@ -125,8 +136,8 @@
     <script src="profile/profile.js"></script>
     <script src="auth/forgot/forgot.js"></script>
     <script src="auth/reset/reset.js"></script>
-    
-    
+
+
 -->
 
     <!--    <script src="mainServices/httpCalls.js"></script>-->

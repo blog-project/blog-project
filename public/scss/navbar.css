@@ -1,0 +1,80 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  color: #3c2e3d;
+  font-family: "Montserrat", sans-serif; }
+
+main {
+  background: #dae9e4;
+  height: 100vh;
+  margin-top: -50px; }
+
+.home-content {
+  padding-top: 100px; }
+
+.rotate-anticlockwise {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  max-width: 100%;
+  max-height: 100%; }
+
+.logo-wrapper {
+  position: absolute;
+  margin-top: 0px;
+  z-index: 2; }
+
+#login-description {
+  display: none; }
+
+.member-ul:hover #login-description {
+  display: inline-block; }
+
+@media screen and (min-width: 768px) {
+  #myUl {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center; } }
+@media screen and (max-width: 768px) {
+  .navbar-default .my-links li:after {
+    display: none; } }
+#myUl {
+  display: flex; }
+
+aside.social-media {
+  position: fixed;
+  top: 200px;
+  background: #dae9e4;
+  z-index: 100; }
+
+aside.social-media ul li {
+  padding: 6px 8px 0 8px;
+  list-style: none;
+  display: block;
+  text-decoration: none; }
+
+aside.social-media ul li:hover {
+  text-decoration: none;
+  background: #8bcbc8; }
+
+aside.social-media ul {
+  margin: 0; }
+
+aside.social-media ul li a {
+  font-size: 30px;
+  color: #3c2e3d; }
+
+@media screen and (max-width: 768px) {
+  section {
+    margin-bottom: 130px; } }
+
+/*# sourceMappingURL=styles.css.map */
