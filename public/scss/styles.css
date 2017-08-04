@@ -49,6 +49,7 @@ main {
     left: 0;
     display: flex;
     justify-content: center; } }
+
 #myNavbar {
   background: transparent; }
 
@@ -80,6 +81,7 @@ main {
 @media screen and (max-width: 768px) {
   .navbar-default .my-links li:after {
     display: none; } }
+
 aside.social-media {
   position: fixed;
   top: 200px;
@@ -106,6 +108,7 @@ aside.social-media ul li a {
 @media screen and (max-width: 768px) {
   section {
     margin-bottom: 130px; } }
+
 .page-divider {
   position: absolute;
   left: 50%;
@@ -243,5 +246,3 @@ form {
   form small {
     color: #4f6fad;
     margin: 0 0 0 0.5em; }
-
-/*# sourceMappingURL=styles.css.map */
