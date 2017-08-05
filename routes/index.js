@@ -38,6 +38,7 @@ exports = module.exports = function (app) {
 	app.get('/blog/:category?', routes.views.blog);
 	app.get('/blog/post/:post', routes.views.post);
 	app.get('/gallery', routes.views.gallery);
+    app.all('/join', routes.views.auth.join);
     app.get('/issues', function(req, res){
         res.send
     });

@@ -6,7 +6,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
@@ -1059,7 +1059,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: #dae9e4; }
+  background-color: #fff; }
 
 input,
 button,
@@ -1070,10 +1070,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #43a7a0;
+  color: #337ab7;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #dae9e4;
+    color: #23527c;
     text-decoration: underline; }
   a:focus {
     outline: thin dotted;
@@ -1298,14 +1298,14 @@ a.text-danger:focus {
   color: #fff; }
 
 .bg-primary {
-  background-color: #dae9e4; }
+  background-color: #337ab7; }
 
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #dae9e4; }
+  background-color: #286090; }
 
 .bg-success {
-  background-color: #dae9e4; }
+  background-color: #dff0d8; }
 
 a.bg-success:hover,
 a.bg-success:focus {
