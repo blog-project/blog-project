@@ -5834,3 +5834,10 @@ button.close {
   display: block;
   max-width: 100%;
   height: auto; }
+
+body {
+  background-color: #dae9e4;
+  font-family: "Montserrat", sans-serif; }
+
+a {
+  color: black; }
