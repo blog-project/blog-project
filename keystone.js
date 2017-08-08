@@ -34,7 +34,8 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-    'session store' : 'mongo'
+    'session store' : 'mongo',
+    'cloudinary config': 'cloudinary://165164737925593:9DgWpm4KJ-GPpqehefKgoajjYB8@dbfrjcezw'
 });
 
 // Load your project's Models
@@ -62,8 +63,10 @@ keystone.set('nav', {
     issues: 'issues'
 });
 
+//Configure Cloudinary setup
+
 // Start Keystone to connect to your database and initialise the web server
-keystone.set('cloudinary config', 'cloudinary://544651661944593:5aJ7WsLNryElOTzwiPR9LiDQF7Y@dhhtpshvr' );
+
 
 
 if (!process.env.MAILGUN_API_KEY || !process.env.MAILGUN_DOMAIN) {
