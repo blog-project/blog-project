@@ -63,6 +63,7 @@ keystone.set('nav', {
 });
 
 // Start Keystone to connect to your database and initialise the web server
+keystone.set('cloudinary config', 'cloudinary://544651661944593:5aJ7WsLNryElOTzwiPR9LiDQF7Y@dhhtpshvr' );
 
 
 if (!process.env.MAILGUN_API_KEY || !process.env.MAILGUN_DOMAIN) {
