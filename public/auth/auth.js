@@ -2,14 +2,18 @@ var app = angular.module("myApp.Auth", []);
 
 app.config(["$routeProvider", function ($routeProvider) {
     $routeProvider
+        .when("/register", {
+            templateUrl: "auth/register/register.html",
+            controller: "registerController"
+        })
         .when("/memberlogin", {
             templateUrl: "auth/login/login.html",
             controller: "loginController"
         })
-        // .when("/logout", {
-        //     controller: "logoutController",
-        //     template: ""
-        // })
+        .when("/logout", {
+            controller: "logoutController",
+            template: ""
+        })
         // .when("/reset/:resetToken", {
         //     templateUrl: "components/auth/reset/reset.html",
         //     controller: "passwordResetController"
@@ -20,6 +24,6 @@ app.config(["$routeProvider", function ($routeProvider) {
         // })
 }]);
 
-// app.config(["$httpProvider", function ($httpProvider) {
-//     $httpProvider.interceptors.push("authInterceptor");
-// }]);
+ app.config(["$httpProvider", function ($httpProvider) {
+     $httpProvider.interceptors.push("authInterceptor");
+ }]);

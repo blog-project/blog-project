@@ -1,4 +1,4 @@
-var app = angular.module("budgetApp.Auth");
+var app = angular.module("myApp.Auth");
 
 app.service("tokenService", [function () {  
     var userToken = "token";

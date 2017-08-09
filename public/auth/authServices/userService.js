@@ -1,11 +1,12 @@
-var app = angular.module("budgetApp.Auth");
+var app = angular.module("myApp.Auth");
 
 app.service("userService", ["$http", "$location", "$localStorage", "tokenService", function ($http, $location, $localStorage, tokenService) {
 
 
     var self = this;
     this.currentUser = $localStorage.user || {};
-
+    
+    
     this.signup = function (user) {
         return $http.post("/auth/signup", user);
     };

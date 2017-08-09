@@ -21,6 +21,7 @@ $fontColor: #3c2e3d;
 $mainPgTopMargin: -71px;
 
 
+
 //navbar
 $navbarATags: #08A7A0;
 $navbarATagsHover: #fdae84;
@@ -64,6 +65,7 @@ main {
 
 #login-description {
     display: none;
+    // opacity: 0;
 }
 
 
@@ -411,3 +413,10 @@ form {
 //    display: none;
 //   }
 // }
+
+
+
+// login page
+.login {
+  margin-left: 250px;
+}

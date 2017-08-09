@@ -1,10 +1,15 @@
-var app = angular.module("myApp", ["ngRoute", "myApp.Auth"]);
-//,
+var app = angular.module("myApp", ["ngRoute", "myApp.Auth", "ngStorage"]);
+//
 
 app.config(["$routeProvider", function ($routeProvider) {
     $routeProvider
         .when("/", {
             templateUrl:"/components/home/home.html"
+        }) 
+        .when("/management", {
+            templateUrl:"/components/management/management.html",
+            isAuthenticated: true,
+            permission: ['admin', 'moderator']
         })
         .when("/about", {
             templateUrl: "/components/about/about.html",
@@ -26,9 +31,9 @@ app.config(["$routeProvider", function ($routeProvider) {
             templateUrl: "/components/contact/contact.html",
             controller: "contactCtrl"
         })
-        .when("/profile", {
-            templateUrl: "components/profile/profile.html",
-            controller: "profileController"
+        .when("/user", {
+            templateUrl: "components/user/user.html",
+            controller: "userController"
         })
         .when("/forgot", {
             templateUrl: "components/auth/forgot/forgot.html",

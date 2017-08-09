@@ -1,4 +1,4 @@
-var app = angular.module("budgetApp.Auth");
+var app = angular.module("myApp.Auth");
 
 app.service("authInterceptor", ["$q", "$location", "tokenService", function ($q, $location, tokenService) {  
     this.request = function(config) {
